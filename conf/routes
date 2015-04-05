@@ -5,6 +5,8 @@
 module:testrunner
 
 GET     /                                       App.Index
+GET     /photos/*                               Photos.Index
+POST    /photos                                 Photos.Save
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
