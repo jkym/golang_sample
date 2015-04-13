@@ -5,8 +5,8 @@ dependencies:
   pre:
     - go get github.com/revel/revel
     - go get github.com/revel/cmd/revel
-    - export GOPATH=$HOME/golang_sample
-    - export PATH="$PATH:$GOPATH/bin"
+#    - export GOPATH=$HOME/golang_sample
+#    - export PATH="$PATH:$GOPATH/bin"
 test:
   override:
     - revel test myapp
