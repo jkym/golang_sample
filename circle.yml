@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    Asia/Tokyo
+dependencies:
+  pre:
+    - go get github.com/revel/revel
+    - go get github.com/revel/cmd/revel
+    - ln -s ${HOME}/golang_sample ${HOME}/go/src/myapp
+#    - export GOPATH=$HOME/golang_sample
+#    - export PATH="$PATH:$GOPATH/bin"
+test:
+  override:
+    - revel test myapp
